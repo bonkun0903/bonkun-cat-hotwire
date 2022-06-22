@@ -4,10 +4,10 @@ class CatsController < ApplicationController
   # GET /cats
   def index
     @cats = Cat.all
-    @serch = Cat.ransack(params[:q])
+    @search = Cat.ransack(params[:q])
     # デフォルトのソートをid降順にする
-    @serch.sorts = 'id desc' if @serch.sorts.empty?
-    @cats = @serch.result.page(params[:page])
+    @search.sorts = 'id desc' if @search.sorts.empty?
+    @cats = @search.result.page(params[:page])
   end
 
   # GET /cats/1
