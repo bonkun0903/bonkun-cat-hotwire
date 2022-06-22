@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # 日本語化
 gem 'rails-i18n'
 
+# ページネーション
+gem 'kaminari'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
