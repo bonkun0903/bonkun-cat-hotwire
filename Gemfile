@@ -51,6 +51,10 @@ gem 'kaminari'
 # 検索機能
 gem 'ransack'
 
+# bootstrap form
+
+gem 'bootstrap_form'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

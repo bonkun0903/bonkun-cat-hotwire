@@ -13,5 +13,5 @@
   <%= link_to "編集", edit_cat_path(@cat) %> |
   <%= link_to "戻る", cats_path %>
 
-  <%= button_to "削除", @cat, method: :delete %>
+  <%= button_to "削除", @cat, method: :delete, class: "btn btn-sm btn-outline-danger" %>
 </div>
