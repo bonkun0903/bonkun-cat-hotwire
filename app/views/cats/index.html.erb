@@ -11,7 +11,7 @@
   </div>
 
   <div class="card-body">
-    <%= search_form_for @search do |f| %>
+    <%= search_form_for @search, html: { data: { turbo_frame: "cats-list" } } do |f| %>
       <div class="row g3 mb-3">
         <div class="col-4 col-xl-2">
           <%= f.label :name_cont, "名前", class: "form-label" %>
@@ -38,7 +38,7 @@
 
   <div class="card-body mx-3">
 
-    <%= turbo_frame_tag "cats_list" do %>
+    <%= turbo_frame_tag "cats-list" do %>
       <div class="row py-2">
         <div class="col-4 mt-auto">
           <%= sort_link(@search, :name) %>
