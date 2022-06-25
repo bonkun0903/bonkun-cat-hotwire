@@ -37,7 +37,7 @@ class CatsController < ApplicationController
   # PATCH/PUT /cats/1
   def update
     if @cat.update(cat_params)
-      # 暗黙的にrenderを実行
+      # 暗黙的にcats/update.turbo_stream.erbをrender
     else
       render :edit, status: :unprocessable_entity
     end
